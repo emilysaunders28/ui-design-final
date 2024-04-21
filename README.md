@@ -1,3 +1,22 @@
+# To Run the App
+
+### In the backend directory run `source venv/bin/activate`
+
+Run this command to activate the virtual environment for the backend
+
+### In the backend directory run `python3 server.py`
+
+This command starts the server. It should be running at the address http://127.0.0.1:5000 . Note: If it is not running at this address, the data fetching will not work.
+
+### Open a new terminal and run `npm install` in frontend directory
+
+Run this command to get the node_modules for this app
+
+### Run `npm start`
+
+This should startup the app at http://localhost:3000
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
