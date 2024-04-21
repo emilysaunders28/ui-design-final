@@ -1,0 +1,142 @@
+{
+    "hue" : {
+        "learn" : {
+            "1": {
+                "title": "Hue",
+                "text": "Hue describes what we typically think of as the color of an object, for instance ''blue'', ''red'', ''purple'' etc. Hue can be represented as a color's position on a standard color wheel. Adding white, black or grey will not change a color's hue.",
+                "media": [
+                    {
+                        "id": 0,
+                        "src":"https://techterms.com/img/xl/hsl_1546.png",
+                        "caption": "Image number 1",
+                        "description": "The color wheel. Each position represents a different hue."
+                    },
+                    {
+                        "id": 1,
+                        "src":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/RGB_color_wheel_360.svg/1024px-RGB_color_wheel_360.svg.png",
+                        "caption": "Image number 2",
+                        "description": "Another color wheel."
+                    }
+                ]
+        
+            },
+            "2": {
+                "title": "Hue",
+                "text": "Pure hues are hues without any black, white or grey added. When used sparingly, pure hues can give a playful feel to a composition, or draw the eye in interesting ways.",
+                "media": []
+            },
+            "3": {
+                "title": "Hue",
+                "text": "However, pure hues can easily become overwhelming and unpleasant, especially if they are far apart on the color wheel.",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "shade" : {
+        "learn" : {
+            "1" : {
+                "title": "Shade",
+                "text": "A shade is a hue with black added to it. Colloquially, shade is used to refer to any variance of a hue, but in color terminology shade only refers to variations achieved by adding black.",
+                "media": []
+            },
+            "2": {
+                "title": "Shade",
+                "text": "When used prominently, shades can create a dark, moody effect",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "tint" : {
+        "learn" : {
+            "1" : {
+                "title": "Tint",
+                "text": "A tint is a hue with white added to it. Tints are often colloquially referred to as ''pastel'' colors.",
+                "media": []
+            },
+            "2" : {
+                "title": "Tint",
+                "text": "When used prominently, tints can create a lighter, brighter feel or a vintage effect.",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "tones" : {
+        "learn" : {
+            "1" : {
+                "title": "Tone",
+                "text": "A tone is a hue with grey added to it. Tones typically appear more dull and muted than pure hues, tints or shades.",
+                "media": []
+            },
+            "2" : {
+                "title": "Tone",
+                "text": "Adding grey to different hues brings them closer together. Therefore tones can be used to make a color palette more harmonious.",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "value" : {
+        "learn" : {
+            "1" : {
+                "title": "Value",
+                "text": "Value refers to how light/dark a color is. Lighter colors have higher value, darker colors have lower value. For a given hue, shades have lower value and tints have higher value.",
+                "media": []
+            },
+            "2" : {
+                "title": "Value",
+                "text": "Some pure hues have higher value than others. For instance, yellow has a higher value than blue. We can see this by comparing the colors when converted to black and white.",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "chroma_saturation" : {
+        "learn" : {
+            "1" : {
+                "title": "Chroma/Saturation",
+                "text": "Chroma or saturation refers to how pure a color appears. Adding black, white or grey to a color lowers its chroma. In some contexts, chroma and saturation have slightly different meanings, but for our purposes we will consider them synonyms. Pure hues are the most saturated, while blacks, whites and greys are the least saturated.",
+                "media": []
+            },
+            "2" : {
+                "title": "Chroma/Saturation",
+                "text": "Colors with low chroma appear closer together, even if they have very different hues. Therefore lowering the chroma of a color palette can make it feel more harmonious. However, it can also make it feel more dull and reduce contrast.",
+                "media": []
+            },
+            "3" : {
+                "title": "Chroma/Saturation",
+                "text": "Kids movies often use highly saturated colors to give a bright, fun energy. Additionally, when paired with moody shades, highly satured colors can create a dark, futuristic city feel.",
+                "media": []
+            },
+            "4" : {
+                "title": "Chroma/Saturation",
+                "text": "Low saturation/chroma can give a vintage or muted/melancholy feel",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "contrast" : {
+        "learn" : {
+            "1" : {
+                "title": "Contrast",
+                "text": "Contrast is a measure of how distinct colors are . High contrast colors are very different, while low contrast colors are very similar. Contrast can be achieved through both hue and value.",
+                "media": []
+            },
+            "2" : {
+                "title": "Contrast",
+                "text": "Very high contrast images can create a jarring, striking effect.",
+                "media": []
+            },
+            "3" : {
+                "title": "Contrast",
+                "text": "Low contrast images can create a hazy feel.",
+                "media": []
+            }
+        },
+        "quiz" : {}
+    },
+    "final" : {}
+}

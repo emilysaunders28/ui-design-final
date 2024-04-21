@@ -1,0 +1,23 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css');
+
+.sidebar {
+  height: 100vh;
+  width: 230px;
+  border-right: 1px solid lightgrey;
+  padding: 0;
+  flex: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.navbar .container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.final-quiz-sidebar {
+  padding: 16px 20px 16px 20px ;
+
+}
