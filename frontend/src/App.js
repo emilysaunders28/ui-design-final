@@ -1,32 +1,68 @@
 import MyNav from './MyNav';
-import LearnPage from './LearnPage';
-import Container from 'react-bootstrap/Container'
-import Sidebar from './Sidebar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState, useEffect } from 'react';
+import HomePage from './HomePage';
+import Learn from './Learn';
+import Quiz from './Quiz';
+import Login from './Login';
 import useFetch from './useFetch';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 
 function App() {
-
-  const [page, setPage] = useState(1);
-
-  const { data: content, isPending, error } = useFetch('http://127.0.0.1:5000/data/hue/learn');
-
+  const terms = ['hue', 'shade', 'tint', 'tone', 'chroma_saturation', 'value', 'contrast']
+  const { data: userInfo, isPending, error } = useFetch('http://127.0.0.1:5000/data/user');
 
   return (
-    <div className="App">
-      <MyNav />
-      <div className="flex">
-        <Sidebar />
-        <div id='content'>
-          { !content && isPending ? <h1>Loading Page...</h1> : <h1>{error}</h1> }
-          { !error && content && Object.keys(content).length !== 0 && <LearnPage content={content[page]} />}
+    <Router>
+      <div className="App">
+        {userInfo && userInfo['user'] && <MyNav user={userInfo ? userInfo['user'] : null}/>}
+        <div className="flex">
+          {userInfo && 
+            <Routes>
+              <Route exact path="/login" element={
+                  userInfo['user'] ? (
+                    <Navigate replace to='/'/>
+                  ) : (
+                    <Login />
+                  )
+                }></Route>
+              <Route exact path="/" element={
+                userInfo['user'] ? (
+                  <HomePage userInfo={userInfo}/>
+                ) : (
+                  <Navigate replace to="/login" />
+                )
+              }></Route>
+              {terms.map((term) => {
+                return  <Route key={term} path={`${term}/learn/:page`} element={
+                  userInfo['user'] ? (
+                    <Learn term={term} userInfo={userInfo}/>
+                  ) : (
+                    <Navigate replace to="/login" />
+                  )
+                }></Route>
+              })}
+              {terms.map((term) => {
+                return  <Route key={term} path={`${term}/quiz/:page`} element={
+                  userInfo['user'] ? (
+                    <Quiz term={term} userInfo={userInfo}/>
+                  ) : (
+                    <Navigate replace to="/login" />
+                  )
+                }></Route>
+              })}
+              <Route path='final/:page' element={
+                  userInfo['user'] ? (
+                    <Quiz term='final' userInfo={userInfo}></Quiz>
+                  ) : (
+                    <Navigate replace to="/login" />
+                  )
+                }></Route>
+            </Routes>
+          }
         </div>
       </div>
-
-        
-      </div>
+    </Router>
   );
 }
 

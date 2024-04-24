@@ -17,7 +17,7 @@ Run this command to get the node_modules for this app
 This should startup the app at http://localhost:3000
 
 
-# Getting Started with Create React App
+## Documentation from the React App generator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

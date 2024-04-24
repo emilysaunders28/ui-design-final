@@ -1,23 +1,134 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css');
 
 .sidebar {
-  height: 100vh;
+  height: 120vh;
   width: 230px;
   border-right: 1px solid lightgrey;
   padding: 0;
   flex: none;
 }
 
-.flex {
-  display: flex;
+.sidebar .accordion-body {
+  padding: 0px;
 }
 
-.navbar .container {
-  margin-left: 20px;
-  margin-right: 20px;
+.sidebar .sidebar-link {
+  padding: 10px;
+  padding-left: 20px;
+  background-color: rgb(231, 230, 238);
+  border: 1px solid white;
+}
+
+.sidebar .sidebar-link:hover {
+  background-color: rgb(168, 166, 177);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
 }
 
 .final-quiz-sidebar {
   padding: 16px 20px 16px 20px ;
+}
+
+.final-quiz-sidebar:hover {
+  background-color: rgb(231, 230, 238);
+}
+
+.sidebar .accordion-header:hover {
+  background-color: rgb(231, 230, 238);
+}
+
+.flex {
+  display: flex;
+}
+
+.navbar .navbar-brand {
+  margin-left: 20px;
+}
+
+.navbar .navbar-nav {
+  margin-right: 20px;
+}
+
+
+
+
+.type-header {
+  font-weight: lighter;
+  color: rgb(188, 188, 188);
+  font-size: xx-large;
+}
+
+.page-nav {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page-nav a {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.page-nav a:hover {
+  font-size: large;
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.my-card .card-body {
+  padding: 10px;
+}
+
+.my-card img {
+  max-height: 500px;
+}
+
+.my-card .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.my-card {
+  padding: 0px;
+}
+.row {
+  margin: 0px;
+}
+
+.my-card .card-subtitle {
+  font-weight: normal;
+  font-size: small;
+  color: lightgrey;
+}
+
+#content .row {
+  margin: 0px;
+}
+
+.login-container {
+  display: flex;
+}
+
+.login-welcome {
+  color: white;
+  height: 100vh;
+  padding: 50px;
+  background-image: url('https://www.moca.org/storage/app/uploads/public/579/fec/1f4/thumb_1630_726_0_0_0_auto.jpg');
+  background-position: center;
+}
+
+
+.login-form-container .row {
+  padding: 30px;
+}
+
+.login-caption {
+  font-size: small;
 
 }
