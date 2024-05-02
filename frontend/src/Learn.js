@@ -18,9 +18,10 @@ const Learn = (props) => {
             <div id='content'>
                 { !content && isPending ? <h1>Loading Page...</h1> : <h1>{error}</h1> }
                 { !error && content && Object.keys(content).length + 1 > page &&
-                            <Container>
-                            <Row>
-                                <h1 className='term-header'>{content[page].title} <span className='type-header'>Learn</span></h1>
+                        <Container className="learn-quiz-container">
+                            <Row className="header-row">
+                                <h1 className='term-header'>{content[page].title}</h1> 
+                                <h1 className='type-header'>Learn</h1>
                             </Row>
                             <Row>
                                 <div className="learn-text">{content[page].text}</div>

@@ -1,3 +1,6 @@
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+
 const PageNav = (props) => {
     const currentPage = props.currentPage
     const numberOfPages = props.numberOfPages
@@ -9,15 +12,18 @@ const PageNav = (props) => {
 
     const nextPageURL = `${url}${currentPage+1}`
     const previousPageURL = `${url}${currentPage-1}`
+    const quizUrl = `/${term}/quiz/1`
 
     return (
-        <div className="page-nav">
-            {currentPage !== 1 && <a href={previousPageURL}>Back</a> }
+        <Navbar className='page-nav justify-content-center' sticky='bottom'>
+            <Nav>
+            {currentPage !== 1 && <Nav.Link className='back-next' href={previousPageURL}>Back</Nav.Link>}
             {pageList.map(number => {
-                return <a key={number} href={`${url}${number}`}>{number}</a>
+                return <Nav.Link href={`${url}${number}`} className={`page-number ${number===currentPage && 'current'}`}>{number}</Nav.Link>
             })}
-            {currentPage !== numberOfPages && <a href={nextPageURL}>Next</a> }
-        </div>
+            {currentPage === numberOfPages ? <Nav.Link className='quiz' href={quizUrl}>Quiz</Nav.Link> : <Nav.Link className='back-next' href={nextPageURL}>Next</Nav.Link>}
+            </Nav>
+        </Navbar>
     );
 }
  

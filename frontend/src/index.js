@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './sidebar.css';
+import './mynav.css';
+import './media.css';
+import './learn.css';
+import './login.css';
+import './pagenav.css';
+import './quiz.css';
 import App from './App';
 
 

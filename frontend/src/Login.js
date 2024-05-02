@@ -7,6 +7,8 @@ import { useState } from 'react';
 const Login = () => {
     const [user, setUser] = useState('');
     const [newUser, setNewUser] = useState('');
+    const [userError, setUserError] = useState('');
+    const [newUserError, setNewUserError] = useState('');
 
     const handleUserSubmit = (e) => {
         e.preventDefault();
@@ -15,6 +17,8 @@ const Login = () => {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
+        }).then((res) => {
+            window.location.href = '/'
         })
     }
 
@@ -25,20 +29,22 @@ const Login = () => {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
-        })
+        }).then(
+            window.location.href = '/'
+        )
     }
 
     return (
         <div className="login-container">
             <div className="login-welcome">
-                <h1>Welcome to Colorpedia</h1>
-                <p>A website for learning color terminology. Log in or create an account to get started.</p>
+                <h1>Colorpedia</h1>
+                <p>Log in or create an account to get started.</p>
                 <div className='login-caption'>{'No.61 (Rust and Blue) by Mark Rothko'}</div>
             </div>
             <Container className='login-form-container'>
                 <Row>
                     <h4>Existing Users</h4>
-                    <Form onSubmit={handleUserSubmit}>
+                    <Form onSubmit={handleUserSubmit} className='login-form'>
                         <Form.Group className='mb-3'>
                             <Form.Label>Enter your uername</Form.Label>
                             <Form.Control 
@@ -54,7 +60,7 @@ const Login = () => {
                 </Row>
                 <Row>
                     <h4>New Users</h4>
-                    <Form onSubmit={handleNewUserSubmit}>
+                    <Form onSubmit={handleNewUserSubmit} className='login-form'>
                         <Form.Group className='mb-3'>
                             <Form.Label>Create a new username</Form.Label>
                             <Form.Control

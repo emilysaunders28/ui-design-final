@@ -1,0 +1,47 @@
+.sidebar {
+    height: 120vh;
+    width: 230px;
+    border-right: 1px solid whitesmoke;
+    padding: 0;
+    flex: none;
+  }
+
+.sidebar .accordion-item {
+    border-color: whitesmoke;
+}
+
+.sidebar .accordion-button:not(.collapsed) {
+  background-color: white;
+}
+  
+.sidebar .accordion-body {
+    padding: 0px;
+}
+  
+.sidebar .sidebar-link {
+    padding: 10px;
+    padding-left: 20px;
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+  
+.sidebar .sidebar-link:hover {
+    background-color: lightgrey;
+}
+  
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+  
+.final-quiz-sidebar {
+    padding: 16px 20px 16px 20px ;
+}
+  
+.final-quiz-sidebar:hover {
+    background-color: rgb(231, 230, 238);
+}
+  
+.sidebar .accordion-header:hover {
+    background-color: rgb(231, 230, 238);
+}

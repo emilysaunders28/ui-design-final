@@ -1,0 +1,42 @@
+.question-media {
+    max-width: 15em;
+}
+
+.question-number {
+    font-size: 1.2em;
+    color: grey;
+}
+
+.question-text {
+    margin: 20px;
+}
+
+.quiz-text {
+    font-size: 1.2em;
+}
+
+.question-media-row {
+    align-items: center;
+}
+  
+.quiz-option {
+    max-width: 15em;
+}
+
+
+  
+.image-form .mb-3 {
+    display: flex;
+}
+  
+.option-group {
+    display: block;
+}
+  
+.correct {
+    color: green;
+}
+  
+.incorrect {
+    color: red;
+}

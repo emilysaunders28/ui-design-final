@@ -1,0 +1,10 @@
+#homepage-image {
+    background-image: url('../public/media/vasily-kandinsky.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 69vh;
+    position: sticky;
+    right: 0;
+}
+  

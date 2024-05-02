@@ -1,0 +1,49 @@
+
+.login-container {
+    display: flex;
+}
+  
+
+.login-welcome {
+    color: white;
+    height: 100vh;
+    width: 70rem;
+    max-width: 55vw;
+    padding: 40px;
+    padding-top: 70px;
+    background-image: url('https://www.moca.org/storage/app/uploads/public/579/fec/1f4/thumb_1630_726_0_0_0_auto.jpg');
+    background-position: center;
+}
+  
+.login-welcome h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.login-welcome p {
+    font-weight: lighter;
+}
+
+.login-form .btn {
+    background-color: rgb(68, 65, 103);
+}
+
+.login-form .btn:hover {
+    background-color: rgb(62, 75, 137);
+}
+
+.login-form .form-label {
+    color: grey;
+    font-size: .9em;
+}
+  
+.login-form-container .row {
+    margin-top: 40px;
+    padding: 30px;
+}
+  
+.login-caption {
+    font-size: x-small;
+    font-weight: lighter;
+}
+  

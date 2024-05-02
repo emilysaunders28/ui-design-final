@@ -21,7 +21,7 @@ const Media = (props) => {
 
     return (
         <>
-            <Card className='my-card' style={{ maxWidth: '72rem' }}>
+            <Card className='my-card'>
             <Card.Header>
                 <Nav variant="tabs" defaultActiveKey={`${url}/#${current}`}>
                 {media.map((media,index) => {

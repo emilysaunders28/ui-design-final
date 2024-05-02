@@ -66,19 +66,102 @@
         "quiz" : {
             "1" : {
                 "type" : "image_select",
-                "question_text" : "",
+                "question_text" : "Select the pure hues that best represents the colors in the following image",
                 "question_media" : [
                     {
-                        "src" : "",
-                        "caption" : ""
+                        "src" : "/media/huequiz1media1.jpeg",
+                        "caption" : "Photograph by Craig Whitehead"
                     }
                 ],
                 "options" : [
                     {
-                        "src" : "",
+                        "id" : "0",
+                        "src" : "/media/huequiz1option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "The blue in this image is different."
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/huequiz1option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "There are no red hues in this image."
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/huequiz1option3.png",
                         "caption" : "",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "The orange has the same hue as the pole and the blue has the same hue as the background wall."
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following is NOT a hue seen in this image",
+                "question_media" : [
+                    {
+                        "src" : "/media/huequiz2media1.jpeg",
+                        "caption" : "<i>The Bay</i> by Helen Frankenthaler"
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/huequiz2option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "There is a small orange section in this painting"
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/huequiz2option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "This pure green has the same hue as the background of this painting"
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/huequiz2option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : "Purple does not appear in this painting"
+                    },
+                    {
+                        "id" : "3",
+                        "src" : "/media/huequiz2option4.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "This blue hue is featured prominently in this painting"
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following pairs has the same hue?",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/huequiz3option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "While we might call both of these colors blue, they have different hues. The left color is more of a true blue, while the right color is turquoise."
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/huequiz3option2.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : "Both of these colors have the same red hue."
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/huequiz3option3.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : "These colors have different hues."
                     }
                 ]
             }
@@ -120,7 +203,90 @@
                 ]
             }
         },
-        "quiz" : {}
+        "quiz" : {
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following is a shade of the hue shown",
+                "question_media" : [
+                    {
+                        "src" : "/media/shadequiz1media1.png",
+                        "caption" : ""
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/shadequiz1option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/shadequiz1option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/shadequiz1option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following 2 images most prominently features shades",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/shadequiz2option1.png",
+                        "caption" : "<i>Blade Runner 2049</i> directed by Denis Villeneuve.",
+                        "correct" : true,
+                        "explanation" : "The predominently dark colors in this image are shades."
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/shadequiz2option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Select the pair where one color is a shade of the other.",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/shadequiz3option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/shadequiz3option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/shadequiz3option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            }
+        }
     },
     "tint" : {
         "learn" : {
@@ -158,7 +324,90 @@
                 ]
             }
         },
-        "quiz" : {}
+        "quiz" : {
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Select the pair where one color is a tint of the other.",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tintquiz1option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tintquiz1option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/tintquiz1option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following 2 images most prominently features tints",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tintquiz2option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tintquiz2option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following is a tint of the hue shown",
+                "question_media" : [
+                    {
+                        "src" : "/media/tintquiz1media1.png",
+                        "caption" : ""
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tintquiz3option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tintquiz3option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/tintquiz3option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            }
+        }
     },
     "tone" : {
         "learn" : {
@@ -189,7 +438,90 @@
                 ]
             }
         },
-        "quiz" : {}
+        "quiz" : {
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following is a tone of the hue shown",
+                "question_media" : [
+                    {
+                        "src" : "/media/tonequiz1media1.png",
+                        "caption" : ""
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tonequiz1option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tonequiz1option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/tonequiz1option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "image_select",
+                "question_text" : "Select the pair where one color is a tone of the other.",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tonequiz2option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tonequiz2option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/tonequiz2option3.png",
+                        "caption" : "",
+                        "correct" : true,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Which of the following 2 images most prominently features tones",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/tonequiz3option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/tonequiz3option2.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    }
+                ]
+            }
+        }
     },
     "value" : {
         "learn" : {
@@ -220,7 +552,85 @@
                 ]
             }
         },
-        "quiz" : {}
+        "quiz" : {
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Select the image that has lower value",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/valuequiz1option1.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/valuequiz1option2.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "image_select",
+                "question_text" : "Select the color with the highest value",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/valuequiz2option1.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/valuequiz2option2.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "2",
+                        "src": "/media/valuequiz2option3.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "3",
+                        "src": "/media/valuequiz2option4.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Select the image with higher value",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/valuequiz3option1.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/valuequiz3option2.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    }
+                ]
+            }
+        }
     },
     "chroma_saturation" : {
         "learn" : {
@@ -294,16 +704,19 @@
         "quiz" : {
             "1" : {
                 "type" : "image_select",
-                "question_text" : "",
-                "question_media" : [
-                    {
-                        "src" : "",
-                        "caption" : ""
-                    }
-                ],
+                "question_text" : "Which of the following images is the best example of high chroma/saturation?",
+                "question_media" : [],
                 "options" : [
                     {
-                        "src" : "",
+                        "id" : "0",
+                        "src" : "/media/chromaquiz1option1.png",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/chromaquiz1option2.png",
                         "caption" : "",
                         "correct" : true,
                         "explanation" : ""
@@ -316,19 +729,56 @@
                 "question_media" : [],
                 "options" : [
                     {
+                        "id" : "0",
                         "src" : "/media/chromaquiz2option1.png",
                         "caption" : "Still frame from <i>Blade Runner 2049</i> directed by Denis Villeneuve.",
                         "correct" : false,
                         "explanation" : "The pinks and blues in this image have high chroma."
                     },
                     {
+                        "id" : "1",
                         "src" : "/media/chromaquiz2option2.png",
                         "caption" : "Cover art for <i>Season of Glass</i> by Yoko Ono",
                         "correct" : true,
                         "explanation" : "The colors in this image are very muted and therefore have low chroma/saturation."
                     }
                 ]
-            }
+            },
+        "3" : {
+            "type" : "image_select",
+            "question_text" : "Select the color palette with the lowest chroma",
+            "question_media" : [],
+            "options" : [
+                {
+                    "id" : "0",
+                    "src" : "/media/chromaquiz3option1.png",
+                    "caption" : "",
+                    "correct" : true,
+                    "explanation" : ""
+                },
+                {
+                    "id" : "1",
+                    "src" : "/media/chromaquiz3option2.png",
+                    "caption" : "",
+                    "correct" : true,
+                    "explanation" : ""
+                },
+                {
+                    "id" : "2",
+                    "src" : "/media/chromaquiz3option3.png",
+                    "caption" : "",
+                    "correct" : true,
+                    "explanation" : ""
+                },
+                {
+                    "id" : "4",
+                    "src" : "/media/chromaquiz3option4.png",
+                    "caption" : "",
+                    "correct" : true,
+                    "explanation" : ""
+                }
+            ]
+        }
         }
     },
     "contrast" : {
@@ -380,11 +830,110 @@
                 ]
             }
         },
-        "quiz" : {}
+        "quiz" : {
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Select the image with higher contrast",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/contrastquiz1option1.png",
+                        "caption": "Cover art for <i>The Fame Monster</i> by Lady Gaga",
+                        "correct": true,
+                        "explanation": "The colors in this image have very different value." 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/contrastquiz1option2.jpeg",
+                        "caption": "Painting by Mark Rothko",
+                        "correct": false,
+                        "explanation": "The colors in this image have similar hue and value and are therefore low contrast." 
+                    }
+                ]
+            },
+            "2" : {
+                "type" : "multiple_choice",
+                "question_text" : "The following image is an example of:",
+                "question_media" : [
+                    {
+                        "src" : "/media/contrastquiz2media1.jpeg",
+                        "caption": "Photograph by Craig Whitehead"
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "text" : "High hue contrast and high value contrast",
+                        "correct" : false,
+                        "explanation" : "The hues do not have high contrast"
+                    },
+                    {
+                        "id" : "1",
+                        "text" : "Low hue contrast and low value contrast",
+                        "correct" : false,
+                        "explanation" : "The black and white background has high value contrast"
+                    },
+                    {
+                        "id" : "2",
+                        "text" : "High hue contrast and low value contrast",
+                        "correct" : false,
+                        "explanation" : "The hues do not have high contrast, the background has high value contrast."
+                    },
+                    {
+                        "id" : "3",
+                        "text" : "Low hue contrast and high value contrast",
+                        "correct" : false,
+                        "explanation" : "The hues do not have high contrast, but the black and white background has high value contrast."
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Select the image with lower constrast",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/contrastquiz3option1.png",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/contrastquiz3option2.jpeg",
+                        "caption": "",
+                        "correct": false,
+                        "explanation": "" 
+                    }
+                ]
+            }
+        }
     },
     "final" : {
         "quiz" : {
-            "1" : {},
+            "1" : {
+                "type" : "image_select",
+                "question_text" : "Select the image with pure hues",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id": "0",
+                        "src": "/media/finalquiz1option1.webp",
+                        "caption": "Painting by Mark Rothko",
+                        "correct": false,
+                        "explanation": "The colors in this image are shades and tones." 
+                    },
+                    {
+                        "id": "1",
+                        "src": "/media/finalquiz1option2.webp",
+                        "caption": "Painting by Roy Lichtenstein",
+                        "correct": true,
+                        "explanation": "The yellow, blue and red in this image are pure hues" 
+                    }
+                ]
+            },
             "2" : {},
             "3" : {},
             "4" : {
@@ -398,16 +947,19 @@
                 ],
                 "options" : [
                     {
+                        "id" : "0",
                         "text" : "Tints",
                         "correct" : true,
                         "explanation" : "The prominent colors in this image are tints of yellow."
                     },
                     {
+                        "id" : "1",
                         "text" : "Shades",
                         "correct" : false,
                         "explanation" : "While there are some shades in this image, they are not most prominent."
                     },
                     {
+                        "id" : "2",
                         "text" : "Pure hues",
                         "correct" : false,
                         "explanation" : "The colors in this image are too muted to be pure hues."
@@ -425,21 +977,25 @@
                 ],
                 "options" : [
                     {
+                        "id" : "0",
                         "text" : "High contrast",
                         "correct" : false,
                         "explanation" : "This image has very low contrast since the colors are close together in both hue and value."
                     },
                     {
+                        "id" : "1",
                         "text" : "Low saturation",
                         "correct" : true,
                         "explanation" : "These colors have very low chroma."
                     },
                     {
+                        "id" : "2",
                         "text" : "Shades",
                         "correct" : false,
                         "explanation" : "There are no shades in this image."
                     },
                     {
+                        "id" : "3",
                         "text" : "Low value",
                         "correct" : false,
                         "explanation" : "Remember that low value is darker."
@@ -452,12 +1008,14 @@
                     "question_media" : [],
                     "options" : [
                         {
+                            "id" : "0",
                             "src" : "/media/finalquiz6option1.png",
                             "caption" : "Cover art for <i>Enema of the State</i> by Blink-182",
                             "correct" : true,
                             "explanation" : "The colors in this image are brighter."
                         },
                         {
+                            "id" : "1",
                             "src" : "/media/finalquiz6option2.png",
                             "caption" : "<i>Morning Sun</i> by Edward Hopper",
                             "correct" : false,
@@ -476,21 +1034,25 @@
                 ],
                 "options" : [
                     {
+                        "id" : "0",
                         "text" : "High Chroma",
                         "correct" : false,
                         "explanation" : "The colors in this image have low chroma."
                     },
                     {
+                        "id" : "1",
                         "text" : "Shades",
                         "correct" : false,
                         "explanation" : "The most dominant colors in this image are not shades."
                     },
                     {
+                        "id" : "2",
                         "text" : "Pure hues",
                         "correct" : false,
                         "explanation" : "There are no pure hues in this image"
                     },
                     {
+                        "id" : "3",
                         "text" : "Tones",
                         "correct" : true,
                         "explanation" : "Most of the colors in this image are tones."
@@ -502,39 +1064,98 @@
                 "question_text" : "What do these 2 images have in common?",
                 "question_media" : [
                     {
-                        "src" : "/media/finalquiz8media1.png",
-                        "caption" : "Still frame from <i>Blade Runner 2049</i> directed by Denis Villeneuve."
+                        "src" : "/media/finalquiz8media1.jpeg",
+                        "caption" : "Painting by Ellsworth Kelly"
                     },
                     {
                         "src" : "/media/finalquiz8media2.png",
-                        "caption" : ""
+                        "caption" : "Painting by Piet Mondrian"
                     }
                 ],
                 "options" : [
                     {
+                        "id" : "0",
                         "text" : "High value",
                         "correct" : false,
-                        "explanation" : "High value means lighter colors. Most of the colors in image 1 have low value."
+                        "explanation" : "Neither of these paintings have particularly high value"
                     },
                     {
-                        "text" : "Tones",
+                        "id" : "1",
+                        "text" : "Tints",
                         "correct" : false,
-                        "explanation" : "The most dominant colors in this image are not shades."
+                        "explanation" : "Neither of these paintings prominently feature tints"
                     },
                     {
-                        "text" : "High Saturation",
+                        "id" : "2",
+                        "text" : "High Chroma",
                         "correct" : true,
                         "explanation" : "The colors in both images are very saturated"
                     },
                     {
-                        "text" : "Tones",
+                        "id" : "3",
+                        "text" : "Low contrast",
                         "correct" : false,
-                        "explanation" : "Neither of these images predominantly feature tones."
+                        "explanation" : "Both of these images have reasonably high contrast."
                     }
                 ]
             },
-            "9" : {},
-            "10" : {}
+            "9" : {
+                "type" : "image_select",
+                "question_text" : "Select the image with higher contrast",
+                "question_media" : [],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/finalquiz9option1.",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/finalquiz9option2.",
+                        "caption" : "",
+                        "correct" : false,
+                        "explanation" : ""
+                    }
+                ]
+            },
+            "10" : {
+                "type" : "multiple_choice",
+                "question_text" : "What type of colors are most prominent in this painting?",
+                "question_media" : [
+                    {
+                        "src" : "/media/finalquiz10media1.png",
+                        "caption" : "Painting by Edward Hopper"
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "text" : "Tints",
+                        "correct" : true,
+                        "explanation" : "The colors in this image are primarily tints"
+                    },
+                    {
+                        "id" : "1",
+                        "text" : "Shades",
+                        "correct" : false,
+                        "explanation" : "Shades are dark, the colors in this image are primarily light."
+                    },
+                    {
+                        "id" : "2",
+                        "text" : "Pure hues",
+                        "correct" : false,
+                        "explanation" : "The colors in this image are too muted to be pure hues"
+                    },
+                    {
+                        "id" : "3",
+                        "text" : "Tones",
+                        "correct" : true,
+                        "explanation" : "There are some tones in this image but they are not the most prominent type of colors."
+                    }
+                ]
+            }
         }
     } 
 }
