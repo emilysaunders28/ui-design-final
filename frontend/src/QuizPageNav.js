@@ -15,7 +15,7 @@ const QuizPageNav = (props) => {
 
     const nextPageURL = `${url}${currentPage+1}`
     const previousPageURL = `${url}${currentPage-1}`
-    const nextTermUrl = `/${nextTerm}/learn/1`
+    const nextTermUrl = nextTerm === 'final' ? '/final/1' : `/${nextTerm}/learn/1`
 
     return (
         <Navbar className='page-nav justify-content-center' sticky='bottom'>

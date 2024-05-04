@@ -219,21 +219,21 @@
                         "src" : "/media/shadequiz1option1.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "The color is obtained by adding white to the hue, shades are obtained by adding black."
                     },
                     {
                         "id" : "1",
                         "src" : "/media/shadequiz1option2.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "This color has a different hue."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/shadequiz1option3.png",
                         "caption" : "",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "This color is obtained by adding black to the hue."
                     }
                 ]
             },
@@ -251,10 +251,10 @@
                     },
                     {
                         "id" : "1",
-                        "src" : "/media/shadequiz2option2.png",
+                        "src" : "/media/shadequiz2option2.webp",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "Shades are dark, the colors in this image are primarily light."
                     }
                 ]
             },
@@ -268,21 +268,21 @@
                         "src" : "/media/shadequiz3option1.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "These are 2 different hues"
                     },
                     {
                         "id" : "1",
                         "src" : "/media/shadequiz3option2.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "These colors are obtained by adding white to a blue hue. Shades are obtained by adding black to a color."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/shadequiz3option3.png",
                         "caption" : "",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "The color on the right is a shade of the color on the left."
                     }
                 ]
             }
@@ -334,22 +334,22 @@
                         "id" : "0",
                         "src" : "/media/tintquiz1option1.png",
                         "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "correct" : true,
+                        "explanation" : "The color on the right is a tint of the hue on the left."
                     },
                     {
                         "id" : "1",
                         "src" : "/media/tintquiz1option2.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "These colors are both tints of different hues."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/tintquiz1option3.png",
                         "caption" : "",
-                        "correct" : true,
-                        "explanation" : ""
+                        "correct" : false,
+                        "explanation" : "The color on the left is a shade of the hue on the right."
                     }
                 ]
             },
@@ -360,26 +360,26 @@
                 "options" : [
                     {
                         "id" : "0",
-                        "src" : "/media/tintquiz2option1.png",
-                        "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "src" : "/media/tintquiz2option1.jpeg",
+                        "caption" : "Painting by Claude Monet",
+                        "correct" : true,
+                        "explanation" : "The colors in this painting are primarily tints."
                     },
                     {
                         "id" : "1",
-                        "src" : "/media/tintquiz2option2.png",
-                        "caption" : "",
+                        "src" : "/media/tintquiz2option2.jpeg",
+                        "caption" : "Painting by Mark Rothko",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "The vibrant colors in this painting are more accurately characterized as pure hues."
                     }
                 ]
             },
             "3" : {
                 "type" : "image_select",
-                "question_text" : "Which of the following is a tint of the hue shown",
+                "question_text" : "Which of the colors taken from the following image is a tint?",
                 "question_media" : [
                     {
-                        "src" : "/media/tintquiz1media1.png",
+                        "src" : "/media/tintquiz3media1.jpeg",
                         "caption" : ""
                     }
                 ],
@@ -389,21 +389,21 @@
                         "src" : "/media/tintquiz3option1.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "This color is a shade."
                     },
                     {
                         "id" : "1",
                         "src" : "/media/tintquiz3option2.png",
                         "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "correct" : true,
+                        "explanation" : "This color is a tint."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/tintquiz3option3.png",
                         "caption" : "",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "This color is a pure hue."
                     }
                 ]
             }
@@ -453,50 +453,55 @@
                         "id" : "0",
                         "src" : "/media/tonequiz1option1.png",
                         "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "correct" : true,
+                        "explanation" : "This is a tone of blue."
                     },
                     {
                         "id" : "1",
                         "src" : "/media/tonequiz1option2.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "This is a tint of blue."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/tonequiz1option3.png",
                         "caption" : "",
-                        "correct" : true,
-                        "explanation" : ""
+                        "correct" : false,
+                        "explanation" : "This is a shade of blue."
                     }
                 ]
             },
             "2" : {
                 "type" : "image_select",
-                "question_text" : "Select the pair where one color is a tone of the other.",
-                "question_media" : [],
+                "question_text" : "Which of the colors taken from the following image is a tone?",
+                "question_media" : [
+                    {
+                        "src" : "/media/tonequiz2media1.jpeg",
+                        "caption": "Painting by Wassily Kandinsky"
+                    }
+                ],
                 "options" : [
                     {
                         "id" : "0",
                         "src" : "/media/tonequiz2option1.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "This color is a tint of yellow."
                     },
                     {
                         "id" : "1",
                         "src" : "/media/tonequiz2option2.png",
                         "caption" : "",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "This color is a pure hue."
                     },
                     {
                         "id" : "2",
                         "src" : "/media/tonequiz2option3.png",
                         "caption" : "",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "This color is a tone of blue."
                     }
                 ]
             },
@@ -508,16 +513,16 @@
                     {
                         "id" : "0",
                         "src" : "/media/tonequiz3option1.png",
-                        "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "caption" : "<i>Christina's World</i> by Andrew Wyeth",
+                        "correct" : true,
+                        "explanation" : "The muted colors in this image are tones"
                     },
                     {
                         "id" : "1",
                         "src" : "/media/tonequiz3option2.png",
-                        "caption" : "",
+                        "caption" : "Frame from the film <i>Suspiria</i>",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "The colors in this image are too bright to be tones."
                     }
                 ]
             }
@@ -560,17 +565,17 @@
                 "options" : [
                     {
                         "id": "0",
-                        "src": "/media/valuequiz1option1.png",
-                        "caption": "",
-                        "correct": false,
-                        "explanation": "" 
+                        "src": "/media/valuequiz1option1.webp",
+                        "caption": "Still frame from <i>Arrival</i> directed by Denis Villeneuve.",
+                        "correct": true,
+                        "explanation": "The colors in this image are darker." 
                     },
                     {
                         "id": "1",
                         "src": "/media/valuequiz1option2.png",
-                        "caption": "",
+                        "caption": "Cover art for <i>True Blue</i> by Madonna",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "The colors in this image are lighter than the other." 
                     }
                 ]
             },
@@ -584,28 +589,28 @@
                         "src": "/media/valuequiz2option1.png",
                         "caption": "",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "This color has the lowest value." 
                     },
                     {
                         "id": "1",
                         "src": "/media/valuequiz2option2.png",
                         "caption": "",
-                        "correct": false,
-                        "explanation": "" 
+                        "correct": true,
+                        "explanation": "This color has the highest value." 
                     },
                     {
                         "id": "2",
                         "src": "/media/valuequiz2option3.png",
                         "caption": "",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "This color has the second highest value." 
                     },
                     {
                         "id": "3",
                         "src": "/media/valuequiz2option4.png",
                         "caption": "",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "This color has the second lowest value." 
                     }
                 ]
             },
@@ -617,16 +622,16 @@
                     {
                         "id": "0",
                         "src": "/media/valuequiz3option1.png",
-                        "caption": "",
-                        "correct": false,
-                        "explanation": "" 
+                        "caption": "Cover art for <i>Sweetener</i> by Ariana Grande",
+                        "correct": true,
+                        "explanation": "Most of the colors in this image have relatively high value." 
                     },
                     {
                         "id": "1",
-                        "src": "/media/valuequiz3option2.png",
-                        "caption": "",
+                        "src": "/media/valuequiz3option2.jpeg",
+                        "caption": "Still frame from <i>The Dark Knight</i> directed by Christopher Nolan.",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "The colors in this image are darker." 
                     }
                 ]
             }
@@ -709,17 +714,17 @@
                 "options" : [
                     {
                         "id" : "0",
-                        "src" : "/media/chromaquiz1option1.png",
-                        "caption" : "",
+                        "src" : "/media/chromaquiz1option1.jpg",
+                        "caption" : "Still frame from <i>Dune</i> directed by Denis Villeneuve.",
                         "correct" : false,
-                        "explanation" : ""
+                        "explanation" : "The colors in this image have overall low chroma/saturation."
                     },
                     {
                         "id" : "1",
-                        "src" : "/media/chromaquiz1option2.png",
-                        "caption" : "",
+                        "src" : "/media/chromaquiz1option2.jpg",
+                        "caption" : "Painting by Joan Miró",
                         "correct" : true,
-                        "explanation" : ""
+                        "explanation" : "The blue and red in this painting have high chroma/saturation."
                     }
                 ]
             },
@@ -753,29 +758,22 @@
                     "id" : "0",
                     "src" : "/media/chromaquiz3option1.png",
                     "caption" : "",
-                    "correct" : true,
-                    "explanation" : ""
+                    "correct" : false,
+                    "explanation" : "This palette has high chroma."
                 },
                 {
                     "id" : "1",
                     "src" : "/media/chromaquiz3option2.png",
                     "caption" : "",
-                    "correct" : true,
-                    "explanation" : ""
+                    "correct" : false,
+                    "explanation" : "Some colors in this palette have high chroma, some colors have low chroma."
                 },
                 {
                     "id" : "2",
                     "src" : "/media/chromaquiz3option3.png",
                     "caption" : "",
                     "correct" : true,
-                    "explanation" : ""
-                },
-                {
-                    "id" : "4",
-                    "src" : "/media/chromaquiz3option4.png",
-                    "caption" : "",
-                    "correct" : true,
-                    "explanation" : ""
+                    "explanation" : "This palette is the least saturated overall."
                 }
             ]
         }
@@ -883,7 +881,7 @@
                     {
                         "id" : "3",
                         "text" : "Low hue contrast and high value contrast",
-                        "correct" : false,
+                        "correct" : true,
                         "explanation" : "The hues do not have high contrast, but the black and white background has high value contrast."
                     }
                 ]
@@ -895,17 +893,17 @@
                 "options" : [
                     {
                         "id": "0",
-                        "src": "/media/contrastquiz3option1.png",
-                        "caption": "",
+                        "src": "/media/contrastquiz3option1.jpeg",
+                        "caption": "Still frame from <i>2001: A Space Odyssey</i> directed by Stanley Kubrick.",
                         "correct": false,
-                        "explanation": "" 
+                        "explanation": "This frame has relatively high contrast" 
                     },
                     {
                         "id": "1",
-                        "src": "/media/contrastquiz3option2.jpeg",
-                        "caption": "",
-                        "correct": false,
-                        "explanation": "" 
+                        "src": "/media/contrastquiz3option2.png",
+                        "caption": "Still frame from <i>2001: A Space Odyssey</i> directed by Stanley Kubrick.",
+                        "correct": true,
+                        "explanation": "This frame has relatively low contrast." 
                     }
                 ]
             }
@@ -934,8 +932,82 @@
                     }
                 ]
             },
-            "2" : {},
-            "3" : {},
+            "2" : {
+                "type" : "multiple_choice",
+                "question_text" : "The following painting is an example of:",
+                "question_media" : [
+                    {
+                        "src" : "/media/finalquiz2media1.webp",
+                        "caption" : "<i>Nighthawks</i> by Edward Hopper"
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "text" : "Low value and low contrast",
+                        "correct" : false,
+                        "explanation" : "This painting does not have particularly low contrast"
+                    },
+                    {
+                        "id" : "1",
+                        "text" : "High value and tints",
+                        "correct" : false,
+                        "explanation" : "A majority of the colors have low value and are not tints."
+                    },
+                    {
+                        "id" : "2",
+                        "text" : "Low value and shades",
+                        "correct" : true,
+                        "explanation" : "Many of the colors in this painting are shades, giving it an overall low value."
+                    },
+                    {
+                        "id" : "3",
+                        "text" : "High chroma and tones",
+                        "correct" : false,
+                        "explanation" : "This painting does not have particularly high chroma."
+                    }
+                ]
+            },
+            "3" : {
+                "type" : "image_select",
+                "question_text" : "Which of the colors taken from the following image is both a tone and has lowest value?",
+                "question_media" : [
+                    {
+                        "src" : "/media/finalquiz3media1.jpeg",
+                        "caption" : "Frame from the film <i>Marie Antoinette</i> Directed by Sofia Coppola"
+                    }
+                ],
+                "options" : [
+                    {
+                        "id" : "0",
+                        "src" : "/media/finalquiz3option1.png",
+                        "caption" : "",
+                        "correct": false,
+                        "explanation" : "This color does not have the lowest value."
+                    },
+                    {
+                        "id" : "1",
+                        "src" : "/media/finalquiz3option2.png",
+                        "caption" : "",
+                        "correct": false,
+                        "explanation" : "This color has high value."
+                    },
+                    {
+                        "id" : "2",
+                        "src" : "/media/finalquiz3option3.png",
+                        "caption" : "",
+                        "correct": false,
+                        "explanation" : "This color has high value."
+                    },
+                    {
+                        "id" : "3",
+                        "src" : "/media/finalquiz3option4.png",
+                        "caption" : "",
+                        "correct": true,
+                        "explanation" : "This is the darkest color."
+                    }
+                ]
+            },
             "4" : {
                 "type" : "multiple_choice",
                 "question_text" : "The dominant colors in this image are:",
@@ -1106,17 +1178,17 @@
                 "options" : [
                     {
                         "id" : "0",
-                        "src" : "/media/finalquiz9option1.",
-                        "caption" : "",
+                        "src" : "/media/finalquiz9option1.jpeg",
+                        "caption" : "Still frame from <i>The Grand Buhdapest Hotel</i> directed by Wes Anderson.",
                         "correct" : false,
                         "explanation" : ""
                     },
                     {
                         "id" : "1",
-                        "src" : "/media/finalquiz9option2.",
-                        "caption" : "",
-                        "correct" : false,
-                        "explanation" : ""
+                        "src" : "/media/finalquiz9option2.png",
+                        "caption" : "Still frame from <i>Kill Bill</i> directed by Quentin Tarantino.",
+                        "correct" : true,
+                        "explanation" : "This frame has relatively high contrast."
                     }
                 ]
             },
