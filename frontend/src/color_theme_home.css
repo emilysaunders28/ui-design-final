@@ -1,0 +1,13 @@
+.navbar.top-bar.home {
+    background-color: rgb(238, 181, 160);
+    color: green;
+}
+
+.navbar.navbar.top-bar.home .navbar-brand {
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar.top-bar.home .nav-item a {
+    color: #807e65ff;
+}
