@@ -6,6 +6,7 @@ import { useState,useEffect } from 'react';
 const Media = (props) => {
     const [current, setCurrent] = useState(0)
     const media = props.media
+    const term = props.term
     const currentMedia = media[current]
     const caption = currentMedia.caption
     const description = currentMedia.description
@@ -21,9 +22,9 @@ const Media = (props) => {
 
     return (
         <>
-            <Card className='my-card'>
+            <Card className={'my-card ' + term}>
             <Card.Header>
-                <Nav variant="tabs" defaultActiveKey={`${url}/#${current}`}>
+                <Nav className={term} variant="tabs" defaultActiveKey={`${url}/#${current}`}>
                 {media.map((media,index) => {
                     return (
                         <Nav.Item key={index}> 

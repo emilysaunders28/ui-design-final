@@ -1,10 +1,130 @@
-#homepage-image {
-    background-image: url('../public/media/vasily-kandinsky.jpg');
+#homepage {
+    background-image: url('https://www.nga.gov/content/dam/ngaweb/features/slideshows/rothko-paintings-on-paper/detail-slide-049-900.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 69vh;
-    position: sticky;
-    right: 0;
+    background-position: center ;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 100px 100px 100px;
+    min-width: fit-content;
+    width: fit-content;
+    min-height: 750px;
+    position: relative;
 }
-  
+
+@media (max-width: 700px) {
+    #homepage {
+        min-width: 700px;
+    }
+}
+
+#homepage-caption {
+    font-size: .75rem;
+    position: absolute;
+    bottom: 15px;
+}
+
+#homepage h1 {
+    font-size: 5.5rem;
+}
+
+#homepage h6 {
+    font-size: 1.2rem;
+    padding-top: 50px;
+}
+
+.homepage-nav {
+    background-color: white;
+    color: #f98a62ff;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 20px;
+}
+
+.homepage-nav .homepage-nav-title h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.homepage-nav .homepage-nav-links a{
+    text-decoration: none;
+    color: #899274ff;
+}
+
+.homepage-nav.final {
+    min-height: 153.91px; 
+}
+
+.homepage-nav.final a{
+    text-decoration: none;
+    color: #899274ff;
+}
+
+.homepage-user-info {
+    font-size: 1.2rem;
+}
+.homepage-user-info button.homepage-logout {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    #homepage {
+        font-size: 1.75rem;
+    }
+    
+    #homepage h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #homepage h6 {
+        font-size: 1.5rem;
+    }
+
+    #homepage h1 {
+        font-size: 11rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #homepage {
+        font-size: 1.5rem;
+    }
+
+    #homepage h1 {
+        font-size: 11rem;
+    }
+    .homepage-user-info {
+        font-size: 1.5rem;
+    }
+    .homepage-user-info button.homepage-logout {
+        font-size: 1.5rem;
+    }
+}
+
+button.btn.homepage-button {
+    background-color: white;
+    margin: 50px;
+    color: #f98a62ff;
+}
+
+button.btn.homepage-logout {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+button.btn.homepage-logout:hover {
+    border: 2px solid #f98a62ff;
+    color: #f98a62ff;
+}
+
+.homepage-logout-col {
+    text-align: right;
+}
+
+.logged-in-as {
+    text-align: left;
+}

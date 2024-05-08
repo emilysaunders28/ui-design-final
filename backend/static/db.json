@@ -380,7 +380,7 @@
                 "question_media" : [
                     {
                         "src" : "/media/tintquiz3media1.jpeg",
-                        "caption" : ""
+                        "caption" : "Painting by Picasso"
                     }
                 ],
                 "options" : [
@@ -402,7 +402,7 @@
                         "id" : "2",
                         "src" : "/media/tintquiz3option3.png",
                         "caption" : "",
-                        "correct" : true,
+                        "correct" : false,
                         "explanation" : "This color is a pure hue."
                     }
                 ]
@@ -970,7 +970,7 @@
             },
             "3" : {
                 "type" : "image_select",
-                "question_text" : "Which of the colors taken from the following image is both a tone and has lowest value?",
+                "question_text" : "Which of the colors taken from the following image has lowest value?",
                 "question_media" : [
                     {
                         "src" : "/media/finalquiz3media1.jpeg",
@@ -1229,5 +1229,15 @@
                 ]
             }
         }
-    } 
+    },
+    "answers" : {
+        "hue" : ["2", "2", "1"],
+        "shade" : ["2", "0", "2"],
+        "tint" : ["0", "0", "1"],
+        "tone" : ["0", "2", "0"],
+        "chroma_saturation" : ["1", "1", "2"],
+        "value" : ["0", "1", "0"],
+        "contrast" : ["0", "3", "1"],
+        "final" : ["1", "2", "3", "0", "1", "0", "3", "2", "1", "0"]
+    }
 }

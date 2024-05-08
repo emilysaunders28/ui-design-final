@@ -4,6 +4,11 @@
   display: flex;
 }
 
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
 .row.header-row {
   display: flex;
   justify-content: space-between;
@@ -11,11 +16,13 @@
 
 .row.header-row h1 {
   max-width: fit-content;
+  color: rgb(217, 0, 0);
+  font-size: 3.5rem;
 }
 
-.type-header {
+.row.header-row h1.type-header {
   font-weight: lighter;
-  color: rgb(188, 188, 188);
+  color: rgb(81, 121, 205);
 }
 
 #content .row {

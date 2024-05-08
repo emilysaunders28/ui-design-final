@@ -1,19 +1,16 @@
 .sidebar {
     height: 120vh;
     width: 230px;
-    border-right: 1px solid whitesmoke;
     padding: 0;
     flex: none;
   }
 
-.sidebar .accordion-item {
-    border-color: whitesmoke;
+@media (min-width: 992px) {
+    .sidebar {
+        width: 300px;
+    }
 }
 
-.sidebar .accordion-button:not(.collapsed) {
-  background-color: white;
-}
-  
 .sidebar .accordion-body {
     padding: 0px;
 }
@@ -21,27 +18,65 @@
 .sidebar .sidebar-link {
     padding: 10px;
     padding-left: 20px;
-    background-color: whitesmoke;
-    border: 1px solid white;
-}
-  
-.sidebar .sidebar-link:hover {
-    background-color: lightgrey;
-}
-  
-.sidebar a {
-    text-decoration: none;
-    color: black;
 }
   
 .final-quiz-sidebar {
     padding: 16px 20px 16px 20px ;
 }
   
-.final-quiz-sidebar:hover {
-    background-color: rgb(231, 230, 238);
+.sidebar-icon {
+    padding-right: 10px;
+    color: rgb(39, 89, 199);
+}
+
+.logged-in-sidebar button.accordion-button{
+    color: rgb(217, 0, 0);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.logged-in-sidebar .sidebar-icon {
+    color: rgb(217, 0, 0);
+}
+
+
+.sidebar {
+    border-right: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    background-color: white;
+}
+
+.sidebar .accordion-button:not(.collapsed) {
+    background-color: white;
+}
+
+.sidebar .accordion-item {
+    border-color: whitesmoke;
+}
+
+.sidebar .sidebar-link:hover {
+    background-color: lightgrey;
 }
   
-.sidebar .accordion-header:hover {
-    background-color: rgb(231, 230, 238);
+.sidebar a {
+    text-decoration: none;
+    color: #003249;
+}
+
+.sidebar .sidebar-link{
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+
+.sidebar .final-quiz-sidebar:hover {
+    background-color: lightgrey;
+}
+  
+.sidebar .accordion-button{
+    background-color: white;
+    color: darkslategray;
+}
+
+.sidebar .final-quiz-sidebar {
+    background-color: white;
 }

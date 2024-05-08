@@ -18,10 +18,11 @@ const QuizPageNav = (props) => {
     const nextTermUrl = nextTerm === 'final' ? '/final/1' : `/${nextTerm}/learn/1`
 
     return (
-        <Navbar className='page-nav justify-content-center' sticky='bottom'>
+        <Navbar className={term + ' page-nav justify-content-center'} sticky='bottom'>
             <Nav>
             {pageList.map(number => {
                 return <Nav.Link 
+                    key={number}
                     href={`${url}${number}`} 
                     className={`quiz-page-number ${number===currentPage && 'current'}`}
                     disabled={!(number===currentPage)}
@@ -32,7 +33,8 @@ const QuizPageNav = (props) => {
             {currentPage !== numberOfPages &&
                 <Nav.Link className='back-next' href={nextPageURL} disabled={disabled}>Next</Nav.Link>
             }
-            {currentPage === numberOfPages && term !== 'final' && <Nav.Link className='next-term' href={nextTermUrl} disabled={disabled}>{nextTermTitle}</Nav.Link>} 
+            {currentPage === numberOfPages && term !== 'final' && <Nav.Link className='next-term' href={nextTermUrl} disabled={disabled}>{nextTermTitle}</Nav.Link>}
+            {currentPage === numberOfPages && term === 'final' && <Nav.Link className='next-term' href='/' disabled={disabled}>Home</Nav.Link>}  
             </Nav>
         </Navbar>
     );

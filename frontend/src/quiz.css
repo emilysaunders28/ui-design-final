@@ -1,32 +1,47 @@
-.question-media {
-    max-width: 15em;
+figure.question-media {
+    max-width: 60rem;
 }
 
 .question-number {
-    font-size: 1.2em;
-    color: grey;
+    font-size: 1.5rem;
+    color: rgb(39, 89, 199);
+    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 .question-text {
-    margin: 20px;
+    padding: 20px;
+    padding-left: 0px;
 }
 
 .quiz-text {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .question-media-row {
     align-items: center;
+    justify-content: center;
 }
   
-.quiz-option {
-    max-width: 15em;
+.quiz-option-image {
+    max-width: 25rem;
+    padding: 15px;
+}
+
+.quiz-option-text {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
 }
 
 
+button.quiz-button {
+    max-width: fit-content;
+    background-color: rgb(39, 89, 199);
+}
   
 .image-form .mb-3 {
-    display: flex;
+    padding-top: 20px
 }
   
 .option-group {
@@ -39,4 +54,12 @@
   
 .incorrect {
     color: red;
+}
+
+.feedback {
+    border: 2px solid;
+    border-radius: 5px;
+    width: fit-content !important;
+    padding: 10px;
+    margin-bottom: 10px;
 }

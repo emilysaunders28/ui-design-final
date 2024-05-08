@@ -1,5 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/esm/Col';
+import Row from 'react-bootstrap/esm/Row';
 import { useState } from 'react';
 
 const QuizFormText = (props) => {
@@ -36,6 +38,7 @@ const QuizFormText = (props) => {
                 {options.map(option => {
                     return <Form.Check 
                         type='radio' 
+                        className='quiz-option-text'
                         disabled={props.submitted}
                         key={option.id}
                         label={option.text}
@@ -45,9 +48,17 @@ const QuizFormText = (props) => {
                     />
                 })}
             </Form.Group>
-            {props.submitted && props.selected===options[props.selected].id && <div className={options[props.selected].correct ? 'correct' : 'incorrect'}>{options[props.selected].explanation}</div>}
-            <Button type='submit' onClick={handleSubmit}>Submit</Button>
-            {props.submitted && !options[props.selected].correct && <Button onClick={handleRetry} >Retry</Button>}
+            <Row>
+                {props.submitted && props.selected===options[props.selected].id &&
+                    <div className={options[props.selected].correct ? 'correct feedback' : 'incorrect feedback'}>
+                        {options[props.selected].explanation}
+                    </div>
+                }
+            </Row>
+            <Row>
+                {!props.submitted && <Button className='quiz-button' type='submit' onClick={handleSubmit} disabled={!Boolean(props.selected)}>Submit</Button>}
+                {props.submitted && !options[props.selected].correct && <Button className='quiz-button' onClick={handleRetry} >Retry</Button>}
+            </Row>
         </Form>
     );
 }

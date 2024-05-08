@@ -15,8 +15,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {userInfo && userInfo['user'] && <MyNav user={userInfo ? userInfo['user'] : null}/>}
-        <div className="flex">
           {userInfo && 
             <Routes>
               <Route exact path="/login" element={
@@ -61,7 +59,6 @@ function App() {
             </Routes>
           }
         </div>
-      </div>
     </Router>
   );
 }

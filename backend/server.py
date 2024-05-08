@@ -12,6 +12,7 @@ path = 'static/db.json'
 with open(path, 'r') as json_file:
     data = json.load(json_file)
 
+answers = data['answers']
 
 def generate_user_array():
     quiz_array = {
@@ -31,9 +32,11 @@ def generate_user_array():
         'tone': False,
         'chroma_saturation': False,
         'value': False,
-        'contrast': False
+        'contrast': False,
+        'final' : False
     }
     return { **{'quiz': quiz_array}, **{'progress' : progress} }
+
 
 current_user = 'Ziggy'
 users = {}
@@ -87,12 +90,14 @@ def logout():
 def quiz():
     global current_user
     global users
+    global answers
     json_data = request.get_json()
     print(json_data)
     term = json_data['question']['term']
     id = json_data['question']['id']
     selected = json_data['selected']
     users[current_user]['quiz'][term][int(id)-1]=selected
+    users[current_user]['progress'][term] = (users[current_user]['quiz'][term] == answers[term])
     return jsonify({'message': f"Successfully updated {term} quiz quistion {id} answer to {selected}"})
 
 

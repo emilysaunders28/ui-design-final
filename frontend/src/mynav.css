@@ -5,3 +5,24 @@
 .navbar .navbar-nav {
     margin-right: 20px;
 }
+
+.navbar.top-bar .navbar-nav .nav-item.dropdown a {
+    font-size: 1.5rem;
+}   
+
+
+.navbar.top-bar.learn-quiz {
+    background-image: url('../public/navbar_images/kandinsky.webp');
+    background-position: 10% 90%;
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+.navbar.navbar.top-bar.learn-quiz .navbar-brand {
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+}
+
+
+

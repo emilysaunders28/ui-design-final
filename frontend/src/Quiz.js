@@ -1,4 +1,5 @@
 import Sidebar from "./Sidebar";
+import MyNav from "./MyNav";
 import QuizPageNav from "./QuizPageNav";
 import QuizFormImage from "./QuizFormImage";
 import QuizFormText from "./QuizFormText";
@@ -24,67 +25,69 @@ const Quiz = (props) => {
 
     return (
         <>
+            <MyNav user={userInfo['user']} term={term}/>
+            <div className="flex">
             <Sidebar term={term} type={'quiz'} userInfo={userInfo}/>
-            <div id='content'>
-                { !questions && isPending ? <h1>Loading Page...</h1> : <h1>{error}</h1> }
-                { !error && questions && Object.keys(questions).length + 1 > page &&
-                        <Container className="learn-quiz-container">
-                            <Row className="header-row">
-                                <h1 className='term-header'>{titles[term]}</h1>
-                                {term !== 'final' && <h1 className='type-header'>Quiz</h1>}
-                            </Row>
-                            <Row className="question-text">
-                                <div className="question-number">{`Quesiton ${page}`}</div>
-                                <div className="quiz-text">{questions[page]['question_text']}</div>
-                            </Row>
-                            <Row className="question-media-row">
-                                {questions[page]['question_media'] && questions[page]['question_media'].map((media, index) => {
-                                    return (
-                                        <Figure key={index} className="question-media">
-                                            <Figure.Image src={media['src']}/>
-                                            <Figure.Caption>
-                                                <p dangerouslySetInnerHTML={{ __html: media['caption'] }} />
-                                            </Figure.Caption>
-                                        </Figure>
-                                    )
-                                })}
-                            </Row>
-                            <Row>
-                                {questions[page]['type']==='image_select' && 
-                                <QuizFormImage 
-                                    options={questions[page]['options']} 
-                                    question={{"term" : term, "id": page}} 
-                                    selected={selected}
-                                    setSelected={setSelected}
-                                    submitted={submitted}
-                                    setSubmitted={setSubmitted}
-                                />}
-                                {questions[page]['type']==='multiple_choice' && 
-                                <QuizFormText 
-                                    options={questions[page]['options']} 
-                                    question={{"term" : term, "id": page}} 
-                                    selected={selected}
-                                    setSelected={setSelected}
-                                    submitted={submitted}
-                                    setSubmitted={setSubmitted}
-                                />}
-                            </Row>
-                            { questions && 
-                                <QuizPageNav 
-                                    currentPage={parseInt(page)} 
-                                    term={term} 
-                                    numberOfPages={Object.keys(questions).length} 
-                                    type={'quiz'} 
-                                    options={questions[page]['options']}
-                                    selected={selected}
-                                    submitted={submitted}
-                                    nextTerm={nextTerm[term]}
-                                    nextTermTitle={titles[nextTerm[term]]}
-                                />
-                            }
-                        </Container>
-                }
-                {/* { questions && <PageNav currentPage={parseInt(page)} term={term} numberOfPages={Object.keys(questions).length} type='quiz'/>} */}
+                <div id='content'>
+                    { !questions && isPending ? <h1>Loading Page...</h1> : <h1>{error}</h1> }
+                    { !error && questions && Object.keys(questions).length + 1 > page &&
+                            <Container className="learn-quiz-container">
+                                <Row className="header-row">
+                                    <h1 className='term-header'>{titles[term]}</h1>
+                                    {term !== 'final' && <h1 className='type-header'>Quiz</h1>}
+                                </Row>
+                                <Row className="question-text">
+                                    <div className="question-number">{`Quesiton ${page}`}</div>
+                                    <div className="quiz-text">{questions[page]['question_text']}</div>
+                                </Row>
+                                <Row className="question-media-row">
+                                    {questions[page]['question_media'] && questions[page]['question_media'].map((media, index) => {
+                                        return (
+                                            <Figure key={index} className="question-media">
+                                                <Figure.Image src={media['src']}/>
+                                                <Figure.Caption>
+                                                    <p dangerouslySetInnerHTML={{ __html: media['caption'] }} />
+                                                </Figure.Caption>
+                                            </Figure>
+                                        )
+                                    })}
+                                </Row>
+                                <Row>
+                                    {questions[page]['type']==='image_select' && 
+                                    <QuizFormImage 
+                                        options={questions[page]['options']} 
+                                        question={{"term" : term, "id": page}} 
+                                        selected={selected}
+                                        setSelected={setSelected}
+                                        submitted={submitted}
+                                        setSubmitted={setSubmitted}
+                                    />}
+                                    {questions[page]['type']==='multiple_choice' && 
+                                    <QuizFormText 
+                                        options={questions[page]['options']} 
+                                        question={{"term" : term, "id": page}} 
+                                        selected={selected}
+                                        setSelected={setSelected}
+                                        submitted={submitted}
+                                        setSubmitted={setSubmitted}
+                                    />}
+                                </Row>
+                                { questions && 
+                                    <QuizPageNav 
+                                        currentPage={parseInt(page)} 
+                                        term={term} 
+                                        numberOfPages={Object.keys(questions).length} 
+                                        type={'quiz'} 
+                                        options={questions[page]['options']}
+                                        selected={selected}
+                                        submitted={submitted}
+                                        nextTerm={nextTerm[term]}
+                                        nextTermTitle={titles[nextTerm[term]]}
+                                    />
+                                }
+                            </Container>
+                    }
+                </div>
             </div>
         </>
     );

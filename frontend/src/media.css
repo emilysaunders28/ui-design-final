@@ -1,21 +1,4 @@
 
-.my-card.card {
-    border-color: whitesmoke;
-}
-
-.my-card .card-header {
-    border-color: whitesmoke;
-}
-
-.my-card .card-header-tabs .nav-link.active {
-    border-color: whitesmoke;
-    border-bottom: 0px;
-}
-
-.my-card.card .nav-link {
-    color: black;
-    font-weight: bold;
-}
 
 .my-card .card-body {
     padding: 10px;
@@ -47,4 +30,29 @@
     font-weight: normal;
     font-size: small;
     color: lightgrey;
+}
+
+.my-card.card .nav-link {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.my-card .card-header-tabs .nav-link.active {
+    border: 0px;
+    background-color: white;
+}
+
+.my-card .card-header-tabs .nav-link {
+    border: 0px;
+    background-color: whitesmoke;
+}
+
+.my-card.card .card-header {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+
+.my-card.card {
+    border-color: whitesmoke;
 }
