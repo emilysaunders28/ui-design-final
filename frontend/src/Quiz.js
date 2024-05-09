@@ -5,6 +5,7 @@ import QuizFormImage from "./QuizFormImage";
 import QuizFormText from "./QuizFormText";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/esm/Col';
 import useFetch from "./useFetch";
 import Figure from 'react-bootstrap/Figure'
 import { useParams } from "react-router-dom";
@@ -43,12 +44,14 @@ const Quiz = (props) => {
                                 <Row className="question-media-row">
                                     {questions[page]['question_media'] && questions[page]['question_media'].map((media, index) => {
                                         return (
-                                            <Figure key={index} className="question-media">
-                                                <Figure.Image src={media['src']}/>
-                                                <Figure.Caption>
-                                                    <p dangerouslySetInnerHTML={{ __html: media['caption'] }} />
-                                                </Figure.Caption>
-                                            </Figure>
+                                            <Col key={index} className="question-media-col justify-content-center d-flex">
+                                                <Figure className="question-media">
+                                                    <Figure.Image src={media['src']}/>
+                                                    <Figure.Caption>
+                                                        <p dangerouslySetInnerHTML={{ __html: media['caption'] }} />
+                                                    </Figure.Caption>
+                                                </Figure>
+                                            </Col>
                                         )
                                     })}
                                 </Row>

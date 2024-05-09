@@ -1,5 +1,9 @@
 figure.question-media {
-    max-width: 60rem;
+    max-width: 40rem;
+}
+
+div.col.question-media-col {
+
 }
 
 .question-number {
@@ -23,6 +27,7 @@ figure.question-media {
     align-items: center;
     justify-content: center;
 }
+
   
 .quiz-option-image {
     max-width: 25rem;
