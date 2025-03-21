@@ -26,7 +26,6 @@ const Quiz = (props) => {
 
     return (
         <>
-            <MyNav user={userInfo['user']} term={term}/>
             <div className="flex">
             <Sidebar term={term} type={'quiz'} userInfo={userInfo}/>
                 <div id='content'>
@@ -38,7 +37,7 @@ const Quiz = (props) => {
                                     {term !== 'final' && <h1 className='type-header'>Quiz</h1>}
                                 </Row>
                                 <Row className="question-text">
-                                    <div className="question-number">{`Quesiton ${page}`}</div>
+                                    <div className="question-number">{`Question ${page}`}</div>
                                     <div className="quiz-text">{questions[page]['question_text']}</div>
                                 </Row>
                                 <Row className="question-media-row">

@@ -5,7 +5,8 @@ figure.question-media {
 
 .question-number {
     font-size: 1.5rem;
-    color: rgb(39, 89, 199);
+    font-weight: bold;
+    color: #8338ec;
     padding-bottom: 20px;
     padding-top: 0px;
     padding-left: 0px;

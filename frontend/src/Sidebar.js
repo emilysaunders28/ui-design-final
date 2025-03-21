@@ -16,6 +16,9 @@ const Sidebar = (props) => {
     }
     return ( 
         <div className={"sidebar " + props.term}>
+            <a href='/'>
+                <img src="/styling_images/logo.png" alt="logo" className='sidebar-logo'></img>
+            </a>
             <Accordion defaultActiveKey={activeTerm} flush>
                 <Accordion.Item>
                     <Accordion.Header className='logged-in-sidebar'>

@@ -11,12 +11,6 @@
 }   
 
 
-.navbar.top-bar.learn-quiz {
-    background-image: url('../public/navbar_images/kandinsky.webp');
-    background-position: 10% 90%;
-    background-repeat: repeat;
-    background-size: 500px;
-}
 
 .navbar.navbar.top-bar.learn-quiz .navbar-brand {
     font-size: 2.2em;
@@ -24,5 +18,7 @@
     font-weight: bold;
 }
 
-
+.navbar-logo {
+    max-height: 50px;
+}
 
