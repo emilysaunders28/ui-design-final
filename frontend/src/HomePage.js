@@ -25,8 +25,8 @@ const HomePage = (props) => {
                 </Row>
                 <Row >
                     <h6>Welcome to</h6>
-                    <h1>Colorpedia</h1>
-                    <div>
+                    <img src="/styling_images/static_logo.png"></img>
+                    <div className="homepage-intro">
                         A website to learn color theory terminology. Click the button or select a term below to get started.
                     </div>
 
@@ -62,7 +62,6 @@ const HomePage = (props) => {
                         </div>
                     </Col>
                 </Row>
-                <div id="homepage-caption">Painting by Mark Rothko</div>
             </Container>
         </>
         

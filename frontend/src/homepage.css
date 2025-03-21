@@ -1,9 +1,6 @@
 #homepage {
-    background-image: url('https://www.nga.gov/content/dam/ngaweb/features/slideshows/rothko-paintings-on-paper/detail-slide-049-900.jpg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center ;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     font-size: 1.5rem;
     padding: 20px 100px 100px 100px;
@@ -25,8 +22,8 @@
     bottom: 15px;
 }
 
-#homepage h1 {
-    font-size: 5.5rem;
+.homepage-intro {
+    font-size: 1.5rem;
 }
 
 #homepage h6 {
@@ -35,8 +32,8 @@
 }
 
 .homepage-nav {
-    background-color: white;
-    color: #f98a62ff;
+    background-color: #3a86ff;
+    color: white;
     border-radius: 5px;
     font-size: 1rem;
     margin: 10px;
@@ -50,7 +47,7 @@
 
 .homepage-nav .homepage-nav-links a{
     text-decoration: none;
-    color: #899274ff;
+    color: white;
 }
 
 .homepage-nav.final {
@@ -59,7 +56,7 @@
 
 .homepage-nav.final a{
     text-decoration: none;
-    color: #899274ff;
+    color: white;
 }
 
 .homepage-user-info {
@@ -106,19 +103,27 @@
 }
 
 button.btn.homepage-button {
-    background-color: white;
+    background-color: #ff006e;
+    opacity: .8;
     margin: 50px;
-    color: #f98a62ff;
+    color: white;
+}
+
+button.btn.homepage-button:hover {
+    background-color:#ff006e;
+    opacity: 1;
 }
 
 button.btn.homepage-logout {
-    background-color: transparent;
-    border: 2px solid white;
+    background-color: #ff006e;
+    opacity: .8;
+    border:0pxs;
     color: white;
 }
+
 button.btn.homepage-logout:hover {
-    border: 2px solid #f98a62ff;
-    color: #f98a62ff;
+    background-color:#ff006e;
+    opacity: 1;
 }
 
 .homepage-logout-col {
