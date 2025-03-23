@@ -33,26 +33,31 @@
 }
 
 .my-card.card .nav-link {
-    color: darkslategray;
+    color: black;
     font-weight: bold;
 }
 
-.my-card .card-header-tabs .nav-link.active {
+.my-card.card .card-header-tabs .nav-link.active {
     border: 0px;
     background-color: white;
 }
 
 .my-card .card-header-tabs .nav-link {
     border: 0px;
-    background-color: whitesmoke;
+    background-color: #ceffea;
+
 }
 
 .my-card.card .card-header {
-    background-color: whitesmoke;
-    border-color: whitesmoke;
+    background-color: #ceffea;
+    border: 0px;
 }
 
 
 .my-card.card {
-    border-color: whitesmoke;
+    border: 4px solid #ccff87;
+}
+
+div.carousel-caption {
+    color: black;
 }

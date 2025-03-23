@@ -40,11 +40,11 @@ const Login = () => {
             <Container className='login-form-container'>
                 <Row className="login-welcome">
                     <Col>
-                        <img src="/styling_images/logo.png" alt="logo" className='login-logo'></img>
+                        <img src="/styling_images/logo2.png" alt="logo" className='login-logo'></img>
                         <p>Log in or create an account to get started.</p>
                     </Col>
                 </Row>
-                <Row>
+                <Row className='login-form-row'>
                     <Col className='login-form-col'>
                         <Form onSubmit={handleUserSubmit} className='login-form'>
                             <h4>Existing Users</h4>

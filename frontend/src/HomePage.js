@@ -20,23 +20,24 @@ const HomePage = (props) => {
         <>
             <Container id="homepage">
                 <Row className="homepage-user-info">
-                    <Col className="logged-in-as">Logged in as {userInfo['user']}</Col>
+                    <Col className="logged-in-as d-flex align-items-center">Logged in as {userInfo['user']}</Col>
                     <Col className="homepage-logout-col"><button className="btn homepage-logout" onClick={handleLogout}>Logout</button></Col>
                 </Row>
                 <Row >
-                    <h6>Welcome to</h6>
-                    <img src="/styling_images/static_logo.png"></img>
-                    <div className="homepage-intro">
-                        A website to learn color theory terminology. Click the button or select a term below to get started.
-                    </div>
-
+                    <Col className="header-col">
+                        <h6>Welcome to</h6>
+                        <img src="/styling_images/static_logo2.png" className="logo-image"></img>
+                        <div className="homepage-intro">
+                            A website to learn color theory terminology. Click the button or select a term below to get started.
+                        </div>
+                    </Col>
                 </Row>
                 <Row>
                     <a href="/hue/learn/1">
                         <button className="btn btn-lg homepage-button">Start Learning</button>
                     </a>
                 </Row>
-                <Row>
+                <Row className="homepage-nav-row">
                     {titles.map((term, index) => {
                         return (
                             <Col xs={4} md={3} xl={2} key={index}>

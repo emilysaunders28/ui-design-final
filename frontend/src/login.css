@@ -2,6 +2,7 @@
 .login-container {
     display: flex;
     color: black;
+    padding-top: 50px;
 }
 
 .login-welcome {
@@ -40,46 +41,55 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers content horizontally */
+    padding: 0px 20px 0px 20px;
 }
   
 .login-form {
     width: 100%;
     max-width: 400px; /* Controls form width */
     padding: 20px;
-    background: #ff006e;
+    border: 4px solid #ccff87;
+    color: black;
     border-radius: 8px;
-    color: white;
+    background-color: #ceffea;
 }
 
 .login-form .btn {
     background-color: white;
-    color: #ff006e;
+    color: black;
     border: none;
+    border: 1px solid #a4c7ff;
+    border: 4px solid #ccff87;
 }
 
 .login-form input {
     max-width: 300px;
     border: none;
-    color: #ff006e;
+    color: black;
+    border: 4px solid #ccff87;
 }
 
 .login-form input::placeholder {
-    color: #3a86ff;
+    color: lightgrey;
 }
 
 .login-form .btn:hover {
-    background-color: #3a86ff;
-    color: white;
+    background-color: #ccff87;
+    border: 4px solid #ccff87;
+    color: black;
 }
 
 .login-form .form-label {
-    color: white;
+    color: black;
     font-size: .9em;
 }
   
 .login-form-container .row {
-    margin-top: 40px;
     padding: 30px;
+}
+
+.login-form-row {
+    margin-top: 0px;
 }
   
 .login-caption {
