@@ -2,7 +2,8 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Sidebar = (props) => {
     const userInfo = props.userInfo
-    const progress = userInfo['progress']
+    const quizData = userInfo['quiz_data']
+    const progress = quizData['progress']
     const activeTerm = props.term
     const activeType = props.type
     const terms = ['Hue', 'Shade', 'Tint', 'Tone', 'Chroma/Saturation', 'Value', 'Contrast']

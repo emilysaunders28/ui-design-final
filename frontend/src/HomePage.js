@@ -5,7 +5,8 @@ import Col from "react-bootstrap/esm/Col"
 
 const HomePage = (props) => {
     const userInfo = props.userInfo
-    const progress = userInfo['progress']
+    const quizData = userInfo['quiz_data']
+    const progress = quizData['progress']
     const titles = ['Hue', 'Shade', 'Tint', 'Tone', 'Chroma', 'Value', 'Contrast']
     const urls = ['hue', 'shade', 'tint', 'tone', 'chroma_saturation', 'value', 'contrast']
 

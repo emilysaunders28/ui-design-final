@@ -57,6 +57,12 @@ button.quiz-button:hover {
     opacity: 1;
 }
 
+button.quiz-button.btn.btn-primary:focus {
+    background-color: #ccff87;
+    border: 4px solid #ceffea;
+    color: black;
+}
+
   
 .image-form .mb-3 {
     padding-top: 20px

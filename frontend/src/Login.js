@@ -58,11 +58,20 @@ const Login = () => {
                                     onChange={(e) => setUser(e.target.value)}
                                 />
                             </Form.Group>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Enter your password</Form.Label>
+                                <Form.Control 
+                                    type='text' 
+                                    placeholder='password' 
+                                    name='password'
+                                    value={user}
+                                    onChange={(e) => setUser(e.target.value)}
+                                />
+                            </Form.Group>
                             <Button type='submit' variant='dark'>Submit</Button>
                         </Form>
                     </Col>
                     <Col className='login-form-col'>
-                        
                         <Form onSubmit={handleNewUserSubmit} className='login-form'>
                             <h4>New Users</h4>
                             <Form.Group className='mb-3'>
@@ -73,6 +82,16 @@ const Login = () => {
                                     name='new_user'
                                     value={newUser}
                                     onChange={(e) => setNewUser(e.target.value)}
+                                />
+                            </Form.Group>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Create a password</Form.Label>
+                                <Form.Control 
+                                    type='text' 
+                                    placeholder='password' 
+                                    name='new_password'
+                                    value={user}
+                                    onChange={(e) => setUser(e.target.value)}
                                 />
                             </Form.Group>
                             <Button type='submit' variant='dark'>Create Account</Button>

@@ -13,9 +13,10 @@ import { useState } from 'react';
 
 const Quiz = (props) => {
     const userInfo = props.userInfo
+    const quizData = userInfo['quiz_data']
     const term = props.term
     const { page } = useParams();
-    const [selected,setSelected] = useState(userInfo['quiz'][term][parseInt(page)-1]);
+    const [selected,setSelected] = useState(quizData['quiz'][term][parseInt(page)-1]);
     const [submitted, setSubmitted] = useState(Boolean(selected))
 
     const titles = {"hue": "Hue", "shade": "Shade", "tint": "Tint", "tone": "Tone", "chroma_saturation": "Chroma/Saturation", "value": "Value", "contrast": "Contrast", "final": "Final Quiz", "none": ""}
