@@ -11,7 +11,9 @@ const MyNav = (props) => {
   return (  
     <Navbar sticky='top' className={`top-bar ${term === 'home' ? 'home' : 'learn-quiz'}`}>
       <Container fluid>
-        <Navbar.Brand href="/">Colorpedia</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src='/styling_images/logo.png' className='navbar-logo'></img>
+        </Navbar.Brand>
       </Container>
     </Navbar>
   );

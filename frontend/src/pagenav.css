@@ -19,13 +19,13 @@
 }
 
 .page-nav .navbar-nav a.nav-link {
-    color: darkslategrey;
+    color: black;
 }
 
 .page-nav .navbar-nav {
-    background-color: whitesmoke;
+    background-color: #ceffea;
 }
 
 .page-nav .current {
-    background-color: lightgrey;
+    background-color: #ccff87;
 }

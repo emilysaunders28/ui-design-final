@@ -13,9 +13,10 @@ import { useState } from 'react';
 
 const Quiz = (props) => {
     const userInfo = props.userInfo
+    const quizData = userInfo['quiz_data']
     const term = props.term
     const { page } = useParams();
-    const [selected,setSelected] = useState(userInfo['quiz'][term][parseInt(page)-1]);
+    const [selected,setSelected] = useState(quizData['quiz'][term][parseInt(page)-1]);
     const [submitted, setSubmitted] = useState(Boolean(selected))
 
     const titles = {"hue": "Hue", "shade": "Shade", "tint": "Tint", "tone": "Tone", "chroma_saturation": "Chroma/Saturation", "value": "Value", "contrast": "Contrast", "final": "Final Quiz", "none": ""}
@@ -26,7 +27,6 @@ const Quiz = (props) => {
 
     return (
         <>
-            <MyNav user={userInfo['user']} term={term}/>
             <div className="flex">
             <Sidebar term={term} type={'quiz'} userInfo={userInfo}/>
                 <div id='content'>
@@ -38,7 +38,7 @@ const Quiz = (props) => {
                                     {term !== 'final' && <h1 className='type-header'>Quiz</h1>}
                                 </Row>
                                 <Row className="question-text">
-                                    <div className="question-number">{`Quesiton ${page}`}</div>
+                                    <div className="question-number">{`Question ${page}`}</div>
                                     <div className="quiz-text">{questions[page]['question_text']}</div>
                                 </Row>
                                 <Row className="question-media-row">

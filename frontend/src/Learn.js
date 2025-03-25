@@ -15,7 +15,7 @@ const Learn = (props) => {
 
     return (  
         <>
-            <MyNav user={userInfo['user']} term={term}/>
+            {/* <MyNav user={userInfo['user']} term={term}/> */}
             <div className="flex">
                 <Sidebar term={term} type={'learn'} userInfo={userInfo}/>
                 <div id='content'>

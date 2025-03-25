@@ -2,7 +2,8 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Sidebar = (props) => {
     const userInfo = props.userInfo
-    const progress = userInfo['progress']
+    const quizData = userInfo['quiz_data']
+    const progress = quizData['progress']
     const activeTerm = props.term
     const activeType = props.type
     const terms = ['Hue', 'Shade', 'Tint', 'Tone', 'Chroma/Saturation', 'Value', 'Contrast']
@@ -16,6 +17,9 @@ const Sidebar = (props) => {
     }
     return ( 
         <div className={"sidebar " + props.term}>
+            <a href='/'>
+                <img src="/styling_images/static_logo2.png" alt="logo" className='sidebar-logo'></img>
+            </a>
             <Accordion defaultActiveKey={activeTerm} flush>
                 <Accordion.Item>
                     <Accordion.Header className='logged-in-sidebar'>

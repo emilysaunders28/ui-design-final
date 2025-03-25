@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import { useState } from 'react';
+import Col from 'react-bootstrap/esm/Col';
 
 const Login = () => {
     const [user, setUser] = useState('');
@@ -36,43 +37,66 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <div className="login-welcome">
-                <h1>Colorpedia</h1>
-                <p>Log in or create an account to get started.</p>
-                <div className='login-caption'>{'No.61 (Rust and Blue) by Mark Rothko'}</div>
-            </div>
             <Container className='login-form-container'>
-                <Row>
-                    <h4>Existing Users</h4>
-                    <Form onSubmit={handleUserSubmit} className='login-form'>
-                        <Form.Group className='mb-3'>
-                            <Form.Label>Enter your uername</Form.Label>
-                            <Form.Control 
-                                type='text' 
-                                placeholder='username' 
-                                name='user'
-                                value={user}
-                                onChange={(e) => setUser(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Button type='submit' variant='dark'>Submit</Button>
-                    </Form>
+                <Row className="login-welcome">
+                    <Col>
+                        <img src="/styling_images/logo2.png" alt="logo" className='login-logo'></img>
+                        <p>Log in or create an account to get started.</p>
+                    </Col>
                 </Row>
-                <Row>
-                    <h4>New Users</h4>
-                    <Form onSubmit={handleNewUserSubmit} className='login-form'>
-                        <Form.Group className='mb-3'>
-                            <Form.Label>Create a new username</Form.Label>
-                            <Form.Control
-                                type='text' 
-                                placeholder='username' 
-                                name='new_user'
-                                value={newUser}
-                                onChange={(e) => setNewUser(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Button type='submit' variant='dark'>Create Account</Button>
-                    </Form>
+                <Row className='login-form-row'>
+                    <Col className='login-form-col'>
+                        <Form onSubmit={handleUserSubmit} className='login-form'>
+                            <h4>Existing Users</h4>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Enter your uername</Form.Label>
+                                <Form.Control 
+                                    type='text' 
+                                    placeholder='username' 
+                                    name='user'
+                                    value={user}
+                                    onChange={(e) => setUser(e.target.value)}
+                                />
+                            </Form.Group>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Enter your password</Form.Label>
+                                <Form.Control 
+                                    type='text' 
+                                    placeholder='password' 
+                                    name='password'
+                                    value={user}
+                                    onChange={(e) => setUser(e.target.value)}
+                                />
+                            </Form.Group>
+                            <Button type='submit' variant='dark'>Submit</Button>
+                        </Form>
+                    </Col>
+                    <Col className='login-form-col'>
+                        <Form onSubmit={handleNewUserSubmit} className='login-form'>
+                            <h4>New Users</h4>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Create a new username</Form.Label>
+                                <Form.Control
+                                    type='text' 
+                                    placeholder='username' 
+                                    name='new_user'
+                                    value={newUser}
+                                    onChange={(e) => setNewUser(e.target.value)}
+                                />
+                            </Form.Group>
+                            <Form.Group className='mb-3'>
+                                <Form.Label>Create a password</Form.Label>
+                                <Form.Control 
+                                    type='text' 
+                                    placeholder='password' 
+                                    name='new_password'
+                                    value={user}
+                                    onChange={(e) => setUser(e.target.value)}
+                                />
+                            </Form.Group>
+                            <Button type='submit' variant='dark'>Create Account</Button>
+                        </Form>
+                    </Col>
                 </Row>
             </Container>
         </div>

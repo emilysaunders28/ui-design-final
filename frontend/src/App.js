@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 function App() {
   const terms = ['hue', 'shade', 'tint', 'tone', 'chroma_saturation', 'value', 'contrast']
   const { data: userInfo, isPending, error } = useFetch('http://127.0.0.1:5000/data/user');
-
+  console.log(userInfo)
   return (
     <Router>
       <div className="App">
